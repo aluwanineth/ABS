@@ -1,20 +1,705 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+ <!--
+	    Start Preloader
+	    ==================================== -->
+      <div id="loading-mask">
+        <div class="loading-img">
+          <img alt="Meghna Preloader" src="assets/images/favicon/preloader.gif"  />
+        </div>
+      </div>
+          <!--
+          End Preloader
+          ==================================== -->
+      <!--
+          Fixed Navigation
+          ==================================== -->
+          <header id="navigation" class="navbar navbar-inverse">
+              <div class="container">
+                  <div class="navbar-header">
+                      <!-- responsive nav button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+            <!-- /responsive nav button -->
+
+            <!-- logo -->
+                      <a class="navbar-brand" href="#body">
+              <h1 id="logo">
+                <img src="assets/images/logo/logo.png" alt="Meghna" />
+              </h1>
+            </a>
+            <!-- /logo -->
+                  </div>
+
+          <!-- main nav -->
+                  <nav class="collapse navbar-collapse navbar-right" role="Navigation">
+                      <ul id="nav" class="nav navbar-nav">
+                          <li class="current"><a href="#body">Home</a></li>
+                          <li><a href="#about">About Us</a></li>
+                          <li><a href="#services">Services</a></li>
+                          <li><a href="#contact-us">Contact</a></li>
+                      </ul>
+                  </nav>
+          <!-- /main nav -->
+
+              </div>
+          </header>
+          <!--
+          End Fixed Navigation
+          ==================================== -->
+          <!--
+          Welcome Slider
+          ==================================== -->
+
+
+      <!--/#home section-->
+
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+          <div class="item active">
+              <img src="assets/images/slider/comanyLogo.jpg"  alt="ABS">
+              <div class="carousel-caption">
+                  <div class="title text-center wow fadeInUp" data-wow-duration="500ms">
+                      <h2>Welcome <span class="color">Aluwani Business Solutions</span></h2>
+                      <div class="border"></div>
+                  </div>
+
+              </div>
+          </div>
+
+          <div class="item">
+              <img src="assets/images/slider/listen.jpg" alt="We Listen">
+              <div class="carousel-caption">
+                  <div class="title text-center wow fadeInUp" data-wow-duration="500ms">
+                      <h2>We <span class="color">Listen</span></h2>
+                      <div class="border"></div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="item">
+              <img src="assets/images/slider/discuss.jpg" alt="We Discuss">
+              <div class="carousel-caption">
+                  <div class="title text-center wow fadeInUp" data-wow-duration="500ms">
+                      <h2>We <span class="color">Discuss</span></h2>
+                      <div class="border"></div>
+                  </div>
+
+              </div>
+          </div>
+
+          <div class="item">
+              <img src="assets/images/slider/deliver.jpg" alt="We Diliver">
+              <div class="carousel-caption">
+                  <div class="title text-center wow fadeInUp" data-wow-duration="500ms">
+                      <h2>we <span class="color">Deliver</span></h2>
+                      <div class="border"></div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+  </div>
+
+      <!--
+      Start About Section
+      ==================================== -->
+      <section id="about" class="bg-one">
+        <div class="container">
+          <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
+              <h2>About <span class="color">Us</span></h2>
+              <div class="border"></div>
+            </div>
+            <!-- /section title -->
+
+            <!-- About item -->
+            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" >
+              <div class="wrap-about">
+                <div class="icon-box">
+                  <i class="fa fa-lightbulb-o fa-4x"></i>
+                </div>
+                <!-- Express About Yourself -->
+                <div class="about-content text-center">
+                  <h3 class="ddd">We're Creative</h3>
+                  <p>What does creativity have to do with software development – actually a lot. Software development is the process of creating software solutions that have never before been created</p>
+                </div>
+              </div>
+            </div>
+            <!-- End About item -->
+
+            <!-- About item -->
+            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">
+              <div class="wrap-about">
+                <div class="icon-box">
+                  <i class="fa fa-users fa-4x"></i>
+                </div>
+                <!-- Express About Yourself -->
+                <div class="about-content text-center">
+                  <h3>We're Professional</h3>
+                  <p>There is no substitute for ‘time in the saddle’ and we trust that our list of satisfied clients will speak volumes for our experience. The company has a proven track record working for a wide range of clients from local start-ups in South Africa</p>
+                </div>
+              </div>
+            </div>
+            <!-- End About item -->
+
+            <!-- About item -->
+            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+              <div class="wrap-about kill-margin-bottom">
+                <div class="icon-box">
+                  <i class="fa fa-users fa-4x"></i>
+                </div>
+                <!-- Express About Yourself -->
+                <div class="about-content text-center">
+                  <h3>Our Mission</h3>
+                  <p>Our function and key concern are to improve the life and profits of your business through automated systems in order to give support to your success by offering services that encourage exponential growth.</p>
+                </div>
+              </div>
+            </div>
+            <!-- End About item -->
+
+          </div> 		<!-- End row -->
+        </div>   	<!-- End container -->
+      </section>   <!-- End section -->
+
+      <!--
+      Start Main Features
+      ==================================== -->
+      <section id="main-features">
+        <div class="container">
+          <div class="row">
+
+            <!-- features item -->
+            <div id="features">
+              <div class="item">
+
+                <div class="features-item">
+
+
+
+                  <!-- features content -->
+                  <div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <h3>Main Features of Aluwani Business Solutions</h3>
+                    <p>We believe in quality and the best service for you even after completing the project.</p>
+                    <p>We have experienced Software Programmer, web designer and Web developers to make us feel pressure free to promise any service to our clients for any project. So have achieved the rare ability to understand, visualise and implement your ideas through the interface of Software Development Life Cycle.</p>
+                  </div>
+                  <!-- /features content -->
+
+                </div>
+              </div>
+
+
+            </div>
+            <!-- /features item -->
+
+          </div> 		<!-- End row -->
+        </div>   	<!-- End container -->
+      </section>   <!-- End section -->
+
+      <!--
+      Start Counter Section
+      ==================================== -->
+
+      <section id="counter" class="parallax-section">
+        <div class="container">
+          <div class="row">
+
+            <!-- first count item -->
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms">
+              <div class="counters-item">
+                <div>
+                    <span data-speed="3000" data-to="320">320</span>
+                </div>
+                <i class="fa fa-users fa-3x"></i>
+                <h3>Happy Clients</h3>
+              </div>
+            </div>
+            <!-- end first count item -->
+
+            <!-- second count item -->
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
+              <div class="counters-item">
+                <div>
+                    <span data-speed="3000" data-to="565">565</span>
+                </div>
+                <i class="fa fa-check-square fa-3x"></i>
+                <h3>Projects completed</h3>
+              </div>
+            </div>
+            <!-- end second count item -->
+
+            <!-- third count item -->
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">
+              <div class="counters-item">
+                <div>
+                    <span data-speed="3000" data-to="95">95</span>
+                  <span>%</span>
+                </div>
+                <i class="fa fa-thumbs-up fa-3x"></i>
+                      <h3>Positive feedback</h3>
+
+              </div>
+            </div>
+            <!-- end third count item -->
+
+            <!-- fourth count item -->
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
+              <div class="counters-item kill-margin-bottom">
+                <div>
+                    <span data-speed="3000" data-to="2500">2500</span>
+                </div>
+                <i class="fa fa-coffee fa-3x"></i>
+                <h3>Cups of Coffee</h3>
+              </div>
+            </div>
+            <!-- end fourth count item -->
+
+          </div> 		<!-- end row -->
+        </div>   	<!-- end container -->
+      </section>   <!-- end section -->
+
+
+      <!-- Start Services Section
+      ==================================== -->
+
+      <section id="services" class="bg-one">
+        <div class="container">
+          <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+              <h2>Our <span class="color">Services</span></h2>
+              <div class="border"></div>
+            </div>
+            <!-- /section title -->
+
+                      <!-- Single Service Item -->
+            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+              <div class="service-block text-center">
+                <div class="service-icon text-center">
+                  <i class="fa fa-windows fa-5x"></i>
+                </div>
+                <h3>CUSTOM SOFTWARE DEVELOPMENT</h3>
+                <p>ABespoke software development per your business requirements and specific needs.</p>
+              </div>
+            </article>
+                      <!-- End Single Service Item -->
+
+                      <!-- Single Service Item -->
+            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+              <div class="service-block text-center">
+                <div class="service-icon text-center">
+                  <i class="fa fa-desktop fa-5x"></i>
+                </div>
+                <h3>MANAGEMENT/MAINTENANCE SERVICES</h3>
+                <p>Ongoing maintenance and management of software for complete peace of mind.</p>
+              </div>
+            </article>
+                      <!-- End Single Service Item -->
+
+                      <!-- Single Service Item -->
+            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+              <div class="service-block text-center">
+                <div class="service-icon text-center">
+                  <i class="fa fa-play fa-5x"></i>
+                </div>
+                <h3>WEB APPLICATION/MOBILE DEVELOPMENT</h3>
+                <p>From web applications to mobile applications, both native and hybrid, you can rely on us.</p>
+              </div>
+            </article>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
+              <div class="service-block text-center">
+                <div class="service-icon text-center">
+                  <i class="fa fa-eye fa-5x"></i>
+                </div>
+                <h3>APPLICATION MODERNIZATION</h3>
+                <p>We re-purpose, refactor and consolidate legacy software to align it more to specific business requirements or change in technology.</p>
+              </div>
+            </article>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">
+              <div class="service-block text-center">
+                <div class="service-icon text-center">
+                  <i class="fa fa-android fa-5x"></i>
+                </div>
+                <h3>APPLICATION TESTING SERVICES</h3>
+                <p>We help you test your current / in-development application and work as an independent testing vendor for optimum software product quality.</p>
+              </div>
+            </article>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
+              <div class="service-block text-center kill-margin-bottom">
+                <div class="service-icon text-center">
+                  <i class="fa fa-link fa-5x"></i>
+                </div>
+                <h3>Networking</h3>
+                <p>At Aluwani Business Solutions provides innovative IT Solutions for small to medium sized enterprises.</p>
+              </div>
+            </article>
+            <!-- End Single Service Item -->
+
+          </div> 		<!-- End row -->
+        </div>   	<!-- End container -->
+      </section>   <!-- End section -->
+
+
+      <!-- Start Portfolio Section
+      =========================================== -->
+
+      <section id="showcase">
+        <div class="container">
+          <div class="row wow fadeInDown" data-wow-duration="500ms">
+            <div class="col-lg-12">
+
+              <!-- section title -->
+              <div class="title text-center">
+                <h2>Our <span class="color">Works</span></h2>
+                <div class="border"></div>
+              </div>
+              <!-- /section title -->
+
+
+
+            </div> <!-- /end col-lg-12 -->
+          </div> <!-- end row -->
+        </div>	<!-- end container -->
+
+
+
+      </section>   <!-- End section -->
+
+
+      <!-- Start Team Skills
+      =========================================== -->
+
+      <section id="team-skills" class="parallax-section">
+        <div class="container">
+          <div class="row wow fadeInDown" data-wow-duration="500ms">
+
+            <!-- section title -->
+            <div class="title text-center">
+              <h2>Our <span class="color">Skills</span></h2>
+              <div class="border"></div>
+            </div>
+            <!-- /section title -->
+
+            <!-- skill set -->
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+              <div class="skill-chart text-center">
+                <span class="chart" data-percent="90">
+                  <span class="percent"></span>
+                </span>
+                <h3><i class="fa fa-windows"></i> Windows Application</h3>
+                <p>ABS has a team of C# developers who have got years and years of experience in C# developmental technology and other related technologies which are collectively used for better project implementation or project execution. Our experts are trained for: better communication, customized web app deployment, highly scalable app development etc.</p>
+              </div>
+            </div>
+            <!-- end skill set -->
+
+            <!-- skill set -->
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+              <div class="skill-chart text-center">
+                <span class="chart" data-percent="90">
+                  <span class="percent"></span>
+                </span>
+                <h3><i class="fa fa-html5"></i> HTML 5</h3>
+                <p>All HTML5 solutions built by ABS are both secure and sustainable, constructed in such a way they can be easily maintained and scaled as needed. Furthermore, HTML5 solutions created by ABD expert HTML5 developers are cross-platform capable, able to function seamlessly on and across any device or software platform.</p>
+              </div>
+            </div>
+            <!-- end skill set -->
+
+            <!-- skill set -->
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+              <div class="skill-chart text-center">
+                <span class="chart" data-percent="65">
+                  <span class="percent"></span>
+                </span>
+                <h3><i class="fa fa-android"></i> Android</h3>
+                <p>Our team of skilled android app developers have hands-on experience in developing professional Android based mobile applications and custom extensions that offers high-performance functionality coupled with influential looks. Mobilepundits has been developing android apps since the early days of the platform.</p>
+              </div>
+            </div>
+            <!-- end skill set -->
+
+            <!-- skill set -->
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+              <div class="skill-chart text-center">
+                <span class="chart" data-percent="45">
+                  <span class="percent"></span>
+                </span>
+                <h3><i class="fa fa-apple"></i> IOS</h3>
+                <p>As an expert we create digital solutions aligned with client business goals. Our expert approach ensures that our apps deliver a great UI/UX, along with excellent code quality. We create iPhone apps for enterprise clients as well as disruptive startups across the globe and bring our innovative capabilities and strong work ethic to every project.</p>
+              </div>
+            </div>
+            <!-- end skill set -->
+
+          </div>  		<!-- End row -->
+        </div>   	<!-- End container -->
+      </section>   <!-- End section -->
+
+      <!-- Start Our Team
+      =========================================== -->
+
+
+      <!-- Start Testimonial
+      =========================================== -->
+
+      <section id="testimonial" class="parallax-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+
+              <!-- section title -->
+              <div class="sub-title text-center wow fadeInDown" data-wow-duration="500ms">
+                <h3>What People Say About Us</h3>
+              </div>
+              <!-- /section title -->
+
+              <!-- testimonial wrapper -->
+              <div id="testimonials" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms">
+
+                <!-- testimonial single -->
+                <div class="item text-center">
+
+                  <!-- client photo -->
+                  <div class="client-thumb">
+                    <img src="img/team/aluwani.jpg" class="img-responsive" alt="Meghna">
+                  </div>
+                  <!-- /client photo -->
+
+                  <!-- client info -->
+                  <div class="client-info">
+                    <div class="client-meta">
+                      <h3>Aluwani Mudau</h3>
+                      <span>Sep 26, 2015</span>
+                    </div>
+                    <div class="client-comment">
+                      <p>They have done the website in the time i requested and they are professional and easy to work with.</p>
+                      <ul class="social-profile">
+                        <li><a href="http://facebook.com/aluwanimuzion"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+                        <li><a href="https://za.linkedin.com/in/aluwani-mudau-49731824"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- /client info -->
+                </div>
+                <!-- /testimonial single -->
+
+                <!-- testimonial single -->
+                <div class="item text-center">
+
+                  <!-- client photo -->
+                  <div class="client-thumb">
+                    <img src="img/team/joe.jpg" class="img-responsive" alt="Meghna">
+                  </div>
+                  <!-- /client photo -->
+
+                  <!-- client info -->
+                  <div class="client-info">
+                    <div class="client-meta">
+                      <h3>Joe Tshidada</h3>
+                      <span>Jun 01, 2015</span>
+                    </div>
+                    <div class="client-comment">
+                      <p>The iphone and Android app i requested was beyond my saticification.</p>
+                      <ul class="social-profile">
+                        <li><a href="https://za.linkedin.com/in/johannes-tshidada-36505644"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- /client info -->
+                </div>
+                <!-- /testimonial single -->
+
+                <!-- testimonial single -->
+                <div class="item text-center">
+
+                  <!-- client photo -->
+                  <div class="client-thumb">
+                    <img src="img/team/member-4.jpg" class="img-responsive" alt="Meghna">
+                  </div>
+                  <!-- /client photo -->
+
+                  <!-- client info -->
+                  <div class="client-info">
+                    <div class="client-meta">
+                      <h3>Deon Swaart</h3>
+                      <span>Mar 31, 2015</span>
+                    </div>
+                    <div class="client-comment">
+                      <p>I can recomend everyone to do business with Aluwani Business solutions they know what they are doing its like they eat technologies.</p>
+
+                    </div>
+                  </div>
+                  <!-- /client info -->
+                </div>
+                <!-- /testimonial single -->
+
+              </div>		<!-- end testimonial wrapper -->
+            </div> 		<!-- end col lg 12 -->
+          </div>	    <!-- End row -->
+        </div>       <!-- End container -->
+      </section>    <!-- End Section -->
+
+
+      <!--
+      Start Blog Section
+      =========================================== -->
+
+
+
+      <!-- Srart Contact Us
+      =========================================== -->
+      <section id="contact-us">
+        <div class="container">
+          <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+              <h2>Get In <span class="color">Touch</span></h2>
+              <div class="border"></div>
+            </div>
+            <!-- /section title -->
+
+            <!-- Contact Details -->
+            <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
+              <h3>Contact Details</h3>
+              <p>You can contact you on below details</p>
+              <div class="contact-details">
+                <div class="con-info clearfix">
+                  <i class="fa fa-home fa-lg"></i>
+                  <span>14th Road, Noordwyk, Midrand, Gauteng</span>
+                </div>
+
+
+
+                <div class="con-info clearfix">
+                  <i class="fa fa-fax fa-lg"></i>
+                  <span>Fax: +2786 0154 4877</span>
+                </div>
+
+                <div class="con-info clearfix">
+                  <i class="fa fa-envelope fa-lg"></i>
+                  <span>Email: info@vhakone.co.za</span>
+                </div>
+              </div>
+            </div>
+            <!-- / End Contact Details -->
+
+            <!-- Contact Form -->
+            <div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+              <form id="contact-form" method="post" action="sendmail.php" role="form">
+
+                <div class="form-group">
+                  <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+                </div>
+
+                <div class="form-group">
+                  <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+                </div>
+
+                <div class="form-group">
+                  <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+                </div>
+
+                <div class="form-group">
+                  <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
+                </div>
+
+                <div id="mail-success" class="success">
+                  Thank you. The Mailman is on His Way :)
+                </div>
+
+                <div id="mail-fail" class="error">
+                  Sorry, don't know what happened. Try later :(
+                </div>
+
+                <div id="cf-submit">
+                  <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+                </div>
+
+              </form>
+            </div>
+            <!-- ./End Contact Form -->
+
+          </div> <!-- end row -->
+        </div> <!-- end container -->
+
+        <!-- Google Map -->
+        <div class="google-map wow fadeInDown" data-wow-duration="500ms">
+          <div id="map-canvas"></div>
+        </div>
+        <!-- /Google Map -->
+
+      </section> <!-- end section -->
+
+      <!-- end Contact Area
+      ========================================== -->
+
+      <footer id="footer" class="bg-one">
+        <div class="container">
+            <div class="row wow fadeInUp" data-wow-duration="500ms">
+            <div class="col-lg-12">
+
+              <!-- Footer Social Links -->
+              <div class="social-icon">
+                <ul>
+                  <li><a href="http://facebook.com/aluwanibuzsol"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://twitter.com/vhakone"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://plus.google.com/b/117719019973495164545/?hl=en"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+              <!--/. End Footer Social Links -->
+
+              <!-- copyright -->
+              <div class="copyright text-center">
+                <a href="index.html">
+                  <img src="img/logo.png" alt="Meghna" />
+                </a>
+                <br />
+
+                <p>Design And Developed by <a href="www.vhakone.co.za"> Aluwani Business Solutions</a>. Copyright &copy; 2016. All Rights Reserved.</p>
+              </div>
+              <!-- /copyright -->
+
+            </div> <!-- end col lg 12 -->
+          </div> <!-- end row -->
+        </div> <!-- end container -->
+      </footer> <!-- end footer -->
+
+      <!-- Back to Top
+      ============================== -->
+      <a href="javascript:;" id="scrollUp">
+        <i class="fa fa-angle-up fa-2x"></i>
+      </a>
 
