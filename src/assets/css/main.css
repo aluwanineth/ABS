@@ -206,8 +206,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sub-title > h3 {
-    border-left: 3px solid #ddd;
-    border-right: 3px solid #ddd;
+    border-left: 3px solid rgb(32, 102, 160);
+    border-right: 3px solid rgb(32, 102, 160);
     display: inline-block;
     padding: 5px 25px;
     text-transform: uppercase;
@@ -338,8 +338,8 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: transparent;
 	margin: 46.19px auto 60px;
 	padding: 20px 0;
-	border-left: solid 3px #ddd;
-	border-right: solid 3px #ddd;
+	border-left: solid 3px rgb(32, 102, 160) ;
+	border-right: solid 3px #6cb670;
 
 	-webkit-transform: translateZ(0px);
 	   -moz-transform: translateZ(0px);
@@ -385,14 +385,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .icon-box:before {
 	top: -56.5685px;
-	border-top: solid 4.2426px #ddd;
-	border-right: solid 4.2426px #ddd;
+	border-top: solid 4.2426px rgb(32, 102, 160);
+	border-right: solid 4.2426px #6cb670 ;
 }
 
 .icon-box:after {
 	bottom: -56.5685px;
-	border-bottom: solid 4.2426px #ddd;
-	border-left: solid 4.2426px #ddd;
+	border-bottom: solid 4.2426px #6cb670 ;
+	border-left: solid 4.2426px rgb(32, 102, 160);
 }
 
 /*=================================================================
@@ -462,13 +462,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .service-block {
     padding: 50px 20px;
-    border-left: 1px solid #4e595f;
-    border-top: 1px solid #4e595f;
+    border-left: 1px solid  #6cb670;
+    border-top: 1px solid  #6cb670;
     margin-bottom: 40px;
 
-	-webkit-box-shadow:2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
-	   -moz-box-shadow:2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
-			box-shadow:2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
+	-webkit-box-shadow:2px 2px 5px  rgb(32, 102, 160), 13px 13px 0  rgb(32, 102, 160);
+	   -moz-box-shadow:2px 2px 5px  rgb(32, 102, 160), 13px 13px 0  rgb(32, 102, 160);
+			box-shadow:2px 2px 5px  rgb(32, 102, 160), 13px 13px 0  rgb(32, 102, 160);
 }
 
 .service-icon {
